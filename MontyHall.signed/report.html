@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Version" content="0.3"/>
+<meta name="Submission" content="16090821016755812604221880539"/>
+<meta name="Problem" content="16090503241bdegv7h6ohumko6r4jhc40tq"/>
+<meta name="Level" content="1"/>
+<meta name="Time" content="2016-09-08T21:01:09Z"/>
+<meta name="ID" content="MontyHall"/>
+<meta name="User" content="16090820477477551229849291947"/>
+<meta name="Elapsed" content="1047 ms"/>
+<style type="text/css">
+.header {font-weight: bold; font-size: 1.2em; }
+.item {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header run">Testing MontyHall.cpp</p>
+<p class="caption">Command line arguments:</p>
+<p class="caption">Input:</p>
+<pre class="output">#	Car 	First	 Opened	Second 	First 	 Second 
+	 Here	choice	 door 	choice 	 wins	 wins	
+1 	2 	 1  	3 	2	 	 yes
+2 	1 	 3  	2 	1	 	 yes
+3 	1 	 3  	2 	1	 	 yes
+4 	3 	 2  	1 	3	 	 yes
+5 	1 	 2  	3 	1	 	 yes
+6 	2 	 2  	1 	3 	 yes 	
+7 	2 	 1  	3 	2	 	 yes
+8 	1 	 3  	2 	1	 	 yes
+9 	2 	 1  	3 	2	 	 yes
+10 	2 	 2  	3 	1 	 yes 	
+11 	2 	 1  	3 	2	 	 yes
+12 	3 	 1  	2 	3	 	 yes
+13 	2 	 3  	1 	2	 	 yes
+14 	3 	 1  	2 	3	 	 yes
+15 	1 	 3  	2 	1	 	 yes
+16 	1 	 2  	3 	1	 	 yes
+17 	2 	 2  	3 	1 	 yes 	
+18 	1 	 1  	3 	2 	 yes 	
+19 	3 	 2  	1 	3	 	 yes
+20 	2 	 2  	1 	3 	 yes 	
+21 	3 	 1  	2 	3	 	 yes
+22 	2 	 1  	3 	2	 	 yes
+23 	3 	 2  	1 	3	 	 yes
+24 	1 	 2  	3 	1	 	 yes
+25 	3 	 2  	1 	3	 	 yes
+26 	2 	 3  	1 	2	 	 yes
+27 	3 	 2  	1 	3	 	 yes
+28 	1 	 1  	2 	3 	 yes 	
+29 	2 	 2  	1 	3 	 yes 	
+30 	2 	 2  	3 	1 	 yes 	
+31 	1 	 3  	2 	1	 	 yes
+32 	3 	 1  	2 	3	 	 yes
+33 	2 	 3  	1 	2	 	 yes
+34 	3 	 1  	2 	3	 	 yes
+35 	1 	 3  	2 	1	 	 yes
+36 	2 	 3  	1 	2	 	 yes
+37 	3 	 1  	2 	3	 	 yes
+38 	2 	 2  	3 	1 	 yes 	
+39 	2 	 2  	1 	3 	 yes 	
+40 	1 	 3  	2 	1	 	 yes
+41 	3 	 3  	2 	1 	 yes 	
+42 	3 	 1  	2 	3	 	 yes
+43 	1 	 1  	3 	2 	 yes 	
+44 	3 	 3  	2 	1 	 yes 	
+45 	1 	 2  	3 	1	 	 yes
+46 	1 	 3  	2 	1	 	 yes
+47 	1 	 3  	2 	1	 	 yes
+48 	1 	 2  	3 	1	 	 yes
+49 	2 	 2  	1 	3 	 yes 	
+50 	2 	 2  	1 	3 	 yes 	
+51 	3 	 3  	1 	2 	 yes 	
+52 	3 	 2  	1 	3	 	 yes
+53 	2 	 1  	3 	2	 	 yes
+54 	1 	 2  	3 	1	 	 yes
+55 	2 	 3  	1 	2	 	 yes
+56 	1 	 1  	2 	3 	 yes 	
+57 	2 	 2  	1 	3 	 yes 	
+58 	3 	 1  	2 	3	 	 yes
+59 	3 	 2  	1 	3	 	 yes
+60 	1 	 3  	2 	1	 	 yes
+61 	1 	 1  	3 	2 	 yes 	
+62 	3 	 3  	1 	2 	 yes 	
+63 	3 	 2  	1 	3	 	 yes
+64 	1 	 2  	3 	1	 	 yes
+65 	3 	 2  	1 	3	 	 yes
+66 	2 	 3  	1 	2	 	 yes
+67 	2 	 3  	1 	2	 	 yes
+68 	1 	 1  	3 	2 	 yes 	
+69 	2 	 2  	3 	1 	 yes 	
+70 	2 	 1  	3 	2	 	 yes
+71 	2 	 2  	3 	1 	 yes 	
+72 	3 	 1  	2 	3	 	 yes
+73 	3 	 1  	2 	3	 	 yes
+74 	2 	 2  	3 	1 	 yes 	
+75 	3 	 1  	2 	3	 	 yes
+76 	2 	 1  	3 	2	 	 yes
+77 	3 	 3  	1 	2 	 yes 	
+78 	3 	 3  	2 	1 	 yes 	
+79 	1 	 1  	2 	3 	 yes 	
+80 	2 	 1  	3 	2	 	 yes
+81 	2 	 2  	1 	3 	 yes 	
+82 	3 	 3  	2 	1 	 yes 	
+83 	1 	 2  	3 	1	 	 yes
+84 	2 	 3  	1 	2	 	 yes
+85 	1 	 2  	3 	1	 	 yes
+86 	1 	 1  	2 	3 	 yes 	
+87 	3 	 3  	1 	2 	 yes 	
+88 	2 	 3  	1 	2	 	 yes
+89 	3 	 1  	2 	3	 	 yes
+90 	2 	 2  	1 	3 	 yes 	
+91 	3 	 2  	1 	3	 	 yes
+92 	1 	 2  	3 	1	 	 yes
+93 	2 	 1  	3 	2	 	 yes
+94 	2 	 3  	1 	2	 	 yes
+95 	1 	 1  	2 	3 	 yes 	
+96 	1 	 2  	3 	1	 	 yes
+97 	2 	 1  	3 	2	 	 yes
+98 	2 	 1  	3 	2	 	 yes
+99 	1 	 3  	2 	1	 	 yes
+100 	2 	 3  	1 	2	 	 yes
+
+  33 wins if stay with the first choice
+  67 wins if switch to the second choice
+
+Win ratio of switch over stay: 2.0
+</pre>
+<p class="header studentFiles">Student files</p>
+<p class="caption">MontyHall.cpp:</p>
+<pre>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;iomanip&gt;
+#include &lt;ctime&gt;
+#include &lt;cstdlib&gt;
+
+using namespace std;
+typedef int Door;
+
+const int SIMULATION_COUNT = 100;
+
+/**
+ * Suggested problem decomposition.
+ * You do not have to use these function declarations.
+ */
+
+void simulate(int sequence, int&amp; win1, int&amp; win2);
+
+Door hideCar();
+Door openDoor(Door firstChoiceDoor, Door carBehindDoor);
+Door makeFirstChoice();
+Door makeSecondChoice(Door firstChoiceDoor, Door openedDoor);
+
+Door randomDoor();
+Door randomDoorNot(Door aDoor, Door anotherDoor);
+Door chooseRemainingDoor(Door firstChoiceDoor, Door openedDoor);
+void printHeader()
+{
+  cout&lt;&lt;"#\tCar \tFirst\t Opened\tSecond \tFirst \t Second "&lt;&lt;endl&lt;&lt;"\t Here\tchoice\t door \tchoice \t wins\t wins\t"&lt;&lt;endl;
+}
+/**
+ * Main
+ */
+int main()
+{
+    int win1 = 0, win2 = 0;
+
+    srand(time(NULL));  // seed the random number generator
+    printHeader();
+
+    // Run the simulations.
+   for (int i = 1; i &lt;= SIMULATION_COUNT; i++)
+   {
+       cout&lt;&lt;i;
+       simulate(i, win1, win2);
+       cout&lt;&lt;endl;
+   }
+    cout &lt;&lt; endl;
+    cout &lt;&lt; setw(4) &lt;&lt; win1 &lt;&lt; " wins if stay with the first choice" &lt;&lt; endl;
+    cout &lt;&lt; setw(4) &lt;&lt; win2 &lt;&lt; " wins if switch to the second choice" &lt;&lt; endl;
+
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(1);
+
+    cout &lt;&lt; endl;
+    cout &lt;&lt; "Win ratio of switch over stay: ";
+    cout &lt;&lt; static_cast&lt;double&gt;(win2)/win1 &lt;&lt; endl;
+    return 0;
+}
+
+/***** Complete this program. ****/
+void simulate(int sequence, int&amp; win1, int&amp; win2)
+{
+ Door carBehindDoor = rand()%3 +1;
+ cout&lt;&lt;" \t"&lt;&lt;carBehindDoor;
+ Door firstChoiceDoor = rand()%3 +1;
+ Door openedDoor;
+ cout&lt;&lt;" \t "&lt;&lt;firstChoiceDoor;
+ openedDoor = openDoor(firstChoiceDoor,carBehindDoor);
+ cout &lt;&lt; "  \t" &lt;&lt;openedDoor ;
+ Door SecondChoice;
+ SecondChoice = chooseRemainingDoor(firstChoiceDoor,openedDoor);
+ cout&lt;&lt; " \t"&lt;&lt;SecondChoice;
+
+if(carBehindDoor==openedDoor || firstChoiceDoor==openedDoor)
+    cout &lt;&lt; "Test case failed" &lt;&lt;endl;
+
+   if (firstChoiceDoor== carBehindDoor)
+   {
+           win1 ++;
+           cout&lt;&lt;" \t yes \t";
+   }
+
+       else
+        {
+            win2++;
+            cout&lt;&lt;"\t \t yes";
+       }
+       return;
+
+   }
+
+
+
+
+Door openDoor(Door firstChoiceDoor, Door carBehindDoor)
+{
+    Door openedDoor;
+    do{
+    openedDoor = rand()%3+1;
+    }while((openedDoor == firstChoiceDoor) || (openedDoor == carBehindDoor));
+
+    return openedDoor;
+}
+
+/*Door makeSecondChoice(Door firstChoiceDoor, Door openedDoor )
+{
+
+    Door choice;
+    choice= rand%2 +1;
+    if(choice ==1)
+    {
+        choice= firstChoiceDoor;
+    }
+    if(choice==2)
+    {
+        choice= chooseRemainingDoor(Door firstChoiceDoor, Door openedDoor);
+    }
+    return choice;
+}*/
+Door chooseRemainingDoor(Door firstChoiceDoor, Door openedDoor)
+{
+    Door remainingDoor;
+    if((firstChoiceDoor ==1 &amp;&amp; openedDoor==2)||(firstChoiceDoor==2 &amp;&amp; openedDoor==1))
+    {
+        remainingDoor = 3;
+    }
+    if((firstChoiceDoor==1 &amp;&amp; openedDoor==3)||(firstChoiceDoor==3 &amp;&amp; openedDoor==1))
+    {
+        remainingDoor = 2;
+    }
+    if((firstChoiceDoor==2 &amp;&amp; openedDoor==3)|| (firstChoiceDoor==3 &amp;&amp; openedDoor==2))
+    {
+        remainingDoor=1;
+    }
+    return remainingDoor;
+}
+</pre>
+<p class="header score">Score</p>
+<p class="score">0</p>
+<p class="download"><a href="MontyHall.signed.zip">Download</a></p>
+<div class="footnotes"><div class="footnote">2016-09-08T21:01:09Z</div>
+</div>
+</body></html>
