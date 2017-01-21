@@ -1,0 +1,29 @@
+void ta (void)
+{
+ while (TRUE)
+ {
+   down(&student); //go to sleep if no.of students are 0
+   down(&mutex); //acquire access to waiting
+   waiting = waiting-1; //decrement count of waiting
+   up(&t_a); //teaching assistant is now ready
+   up(&mutex); //release waiting
+   service_student(); //help the student
+ }
+}
+
+void student(void)
+{
+ down(&mutex); //enter critical region
+ if(waiting<chairs) //if there are no free chairs,
+                       leave
+ {
+ waiting= waiting+1; //increment count of waiting students
+ up(&student);  // wake up t_a if necessary
+ up(&mutex); //release access to 'waiting'
+ down(&t_a);  //go to sleep if # of free barbers is 0
+ service_student();  
+ }else{
+ up(&mutex);         //waiting hall is full , do not wait
+ }
+ 
+}

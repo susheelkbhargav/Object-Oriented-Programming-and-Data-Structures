@@ -1,0 +1,19 @@
+Transactional: have lcoking
+ object storage
+ file system
+ nutanix
+ 
+ vmvmvmvmv
+ -------------
+ storage presentation
+ ----------------------
+ vmware vsphere vmware vsphere vmware vsphere 
+ 
+ latency machines
+ 
+ 
+sacle out loosely coupled: 
+
+use of scale out storage?? only replication of data?
+
+

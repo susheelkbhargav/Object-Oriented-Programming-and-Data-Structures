@@ -1,0 +1,44 @@
+         |---Prepend---|   |-----Gets----|   |----Search---|   |----Remove---|   |----Append---|
+  Size   Vector     List   Vector     List   Vector     List   Vector     List   Vector     List
+  5000     3 ms     0 ms     0 ms    88 ms    95 ms    51 ms     0 ms     0 ms     0 ms     0 ms
+ 10000    11 ms     1 ms     0 ms   175 ms   195 ms   102 ms     0 ms     0 ms     0 ms     1 ms
+ 15000    27 ms     2 ms     0 ms   264 ms   291 ms   154 ms     0 ms     0 ms     0 ms     2 ms
+ 20000    80 ms     4 ms     0 ms   352 ms   382 ms   208 ms     0 ms     0 ms     0 ms     2 ms
+ 25000    80 ms     3 ms     0 ms   440 ms   475 ms   251 ms     0 ms     0 ms     1 ms     3 ms
+ 30000   112 ms     4 ms     0 ms   517 ms   568 ms   306 ms     1 ms     1 ms     1 ms     4 ms
+ 35000   154 ms     4 ms     0 ms   617 ms   670 ms   364 ms     1 ms     1 ms     1 ms     4 ms
+ 40000   208 ms     5 ms     0 ms   698 ms   774 ms   413 ms     0 ms     1 ms     1 ms     5 ms
+ 45000   254 ms     6 ms     0 ms   807 ms   851 ms   452 ms     1 ms     1 ms     2 ms     5 ms
+ 50000   319 ms     8 ms     0 ms   885 ms   961 ms   504 ms     1 ms     1 ms     2 ms     7 ms
+ 55000   380 ms     7 ms     0 ms   967 ms  1073 ms   556 ms     1 ms     1 ms     2 ms     7 ms
+ 60000   452 ms     8 ms     0 ms  1091 ms  1146 ms   644 ms     1 ms     2 ms     3 ms     8 ms
+ 65000   554 ms     9 ms     0 ms  1276 ms  1242 ms   677 ms     2 ms     2 ms     2 ms     8 ms
+ 70000   623 ms     9 ms     0 ms  1460 ms  1384 ms   721 ms     1 ms     2 ms     2 ms     8 ms
+ 75000   722 ms    10 ms     0 ms  1373 ms  1456 ms   774 ms     1 ms     2 ms     3 ms     9 ms
+ 80000   807 ms    11 ms     0 ms  1423 ms  1583 ms   855 ms     2 ms     2 ms     3 ms    10 ms
+ 85000   969 ms    11 ms     0 ms  1580 ms  1681 ms   898 ms     1 ms     3 ms     3 ms    10 ms
+ 90000  1050 ms    15 ms     0 ms  1738 ms  1837 ms   956 ms     2 ms     3 ms     4 ms    11 ms
+ 95000  1285 ms    15 ms     0 ms  1769 ms  1898 ms   995 ms     2 ms     3 ms     4 ms    11 ms
+100000  1292 ms    15 ms     0 ms  1811 ms  1962 ms  1050 ms     2 ms     3 ms     4 ms    13 ms
+105000  1559 ms    16 ms     0 ms  1905 ms  2016 ms  1093 ms     3 ms     3 ms     4 ms    14 ms
+110000  1565 ms    16 ms     0 ms  2061 ms  2090 ms  1144 ms     2 ms     3 ms     5 ms    14 ms
+115000  1697 ms    16 ms     0 ms  2069 ms  2217 ms  1162 ms     2 ms     4 ms     5 ms    15 ms
+120000  1873 ms    17 ms     0 ms  2172 ms  2260 ms  1227 ms     2 ms     4 ms     5 ms    16 ms
+125000  2027 ms    17 ms     0 ms  2311 ms  2513 ms  1274 ms     2 ms     4 ms     5 ms    17 ms
+130000  2219 ms    18 ms     0 ms  2409 ms  2539 ms  1377 ms     2 ms     4 ms     5 ms    22 ms
+135000  2468 ms    18 ms     0 ms  2439 ms  2523 ms  1417 ms     3 ms     4 ms     5 ms    18 ms
+140000  2624 ms    19 ms     0 ms  2644 ms  2808 ms  1686 ms     3 ms     4 ms     8 ms    19 ms
+145000  2942 ms    21 ms     0 ms  2792 ms  2905 ms  1670 ms     4 ms     5 ms     6 ms    19 ms
+150000  3171 ms    21 ms     0 ms  2944 ms  2992 ms  1653 ms     3 ms     5 ms     6 ms    18 ms
+155000  3229 ms    21 ms     0 ms  2946 ms  2992 ms  1737 ms     3 ms     6 ms     6 ms    20 ms
+160000  3383 ms    23 ms     0 ms  3073 ms  3176 ms  1689 ms     3 ms     5 ms     6 ms    20 ms
+165000  4120 ms    23 ms     0 ms  3272 ms  3067 ms  1747 ms     3 ms     5 ms     6 ms    21 ms
+170000  4282 ms    32 ms     0 ms  3223 ms  3523 ms  1817 ms     3 ms     5 ms     7 ms    21 ms
+175000  4279 ms    25 ms     0 ms  3457 ms  3295 ms  1890 ms     3 ms     6 ms     9 ms    21 ms
+180000  4517 ms    25 ms     0 ms  3472 ms  3553 ms  1985 ms     3 ms     6 ms     9 ms    22 ms
+185000  5012 ms    26 ms     0 ms  3575 ms  3668 ms  2124 ms     4 ms     6 ms     9 ms    23 ms
+190000  5016 ms    28 ms     0 ms  3693 ms  3710 ms  2090 ms     4 ms     6 ms    10 ms    24 ms
+195000  5427 ms    32 ms     0 ms  3832 ms  3806 ms  2057 ms     4 ms     6 ms    10 ms    24 ms
+200000  5483 ms    29 ms     0 ms  3855 ms  4028 ms  2050 ms     4 ms     7 ms     9 ms    28 ms
+
+Done!
